@@ -1,0 +1,5 @@
+#set( $layout = "template.vm" )
+#set( $page_title = "this is the test page")
+#define($screen_content)
+this is buisin content
+#end
