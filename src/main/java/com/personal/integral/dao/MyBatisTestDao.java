@@ -1,4 +1,5 @@
 package com.personal.integral.dao;
 
-public class MyBatisTestDao {
+public class MyBatisTestDao extends MybatisBaseDao{
+
 }
