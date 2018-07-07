@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/index")
@@ -30,7 +31,17 @@ public class IndexController {
         //输出日志文件
         logger.info("test pages");
         //返回一个index.jsp这个视图
-        return "welcome";
+        return "jsp/welcome";
+    }
+
+    //velocity
+    @RequestMapping("/velocity")
+    public  ModelAndView testVelocity(){
+        ModelAndView mav = new ModelAndView("velocity");
+        //输出日志文件
+        logger.info("velocity pages");
+        //返回一个index.jsp这个视图
+        return mav;
     }
 
 }
