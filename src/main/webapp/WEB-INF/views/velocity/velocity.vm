@@ -1,5 +1,4 @@
-#set( $layout = "template.vm" )
+#set( $layout = "layout/default.vm" )
 #set( $page_title = "this is the test page")
-#define($screen_content)
-this is buisin content
-#end
+define($screen_content) dafdl
+end
